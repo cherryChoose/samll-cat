@@ -1,0 +1,9 @@
+- if line_item == @current_item
+  tr#current_item
+- else
+  tr
+    td= "#{line_item.quantity} * "
+    td= line_item.product.title
+    td= number_to_currency(line_item.total_price)
+    td= button_to "-", change_quantity_line_item_url(line_item), method: :patch
+    td= button_to "+", change_quantity_line_item_url(line_item,id_add: true), method: :post

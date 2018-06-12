@@ -1,0 +1,10 @@
+h1.text-center 小米手机最新咨询
+.store
+  - @products.each do |product|
+    .entry
+      = image_tag(product.attachments.try(:first).file.url(:thumb)) if product.attachments.present?
+      h3= link_to  product[:title],product_path(product)
+      p= sanitize(product[:description])
+      .price_line
+        span.price= number_to_currency(product[:price])
+        = button_to "加入购物车",line_items_path(product_id: product),remote:true

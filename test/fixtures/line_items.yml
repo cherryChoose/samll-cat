@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+
+  product: iphone_for
+  cart: one
+  quantity: 1
+  price: 2999.00
+
+two:
+  product: iphone_five
+  cart: two
+  quantity: 1
+  price: 3999.00

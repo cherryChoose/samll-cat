@@ -1,0 +1,8 @@
+= simple_form_for @product, html: { multipart: true }, :html => { :class => 'inline_form' } do |f|
+  = error_messages(f)
+  = f.input :title
+  = f.input :description
+  = file_field_tag :file
+  = f.input :price
+
+  = f.button :submit, class: 'btn-primary'

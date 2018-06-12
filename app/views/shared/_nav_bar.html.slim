@@ -1,0 +1,14 @@
+// 侧边导航栏
+#side
+  #cart
+    - if @cart
+      = hidden_div_if( @cart.try(:line_items).nil?, id:'cart') do
+        -#=render @cart
+  ul.nav.navbar-nav
+    li.active
+      = link_to "Home",root_path
+      = link_to "登陆",new_user_session_path
+      = link_to "注册",new_user_registration_path
+      = link_to "产品咨询","#"
+      = link_to "最新资讯","#"
+      = link_to "关于我们","#"

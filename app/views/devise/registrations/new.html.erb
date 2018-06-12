@@ -1,0 +1,42 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading"><%= t("users.register_user")%></div>
+  <div class="panel-body">
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), remote: true, html: { class: ""}) do |f| %>
+
+        <div class="form-group">
+          <%= f.text_field :name, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.name") %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :phone, type: :number, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.phone"), hint: t("users.suggest_phone") %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :email, type: :email, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.email") %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :github, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.github") %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :qq,  class: "form-control input-lg", placeholder: t("activerecord.attributes.user.qq") %>
+        </div>
+        <div class="form-group">
+          <%= f.text_field :twitter, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.twitter") %>
+        </div>
+
+        <div class="form-group">
+          <%= f.password_field :password, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.password") %>
+        </div>
+        <div class="form-group">
+          <%= f.password_field :password_confirmation, class: "form-control input-lg", placeholder: t("activerecord.attributes.user.password_confirmation") %>
+        </div>
+
+        <div class="form-group">
+          <%= f.submit t('users.submit_new_user'), class: "btn btn-lg btn-primary" %>
+          <%= link_to t("users.logins"), new_session_path(resource_name), class: "btn btn-lg btn-default hide-ios" %>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+
+

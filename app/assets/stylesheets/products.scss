@@ -1,0 +1,21 @@
+.product-iWrap {
+  .product-operate {
+    position: relative;
+    height: 32px;
+    border: none;
+    border-top: 1px solid #eee;
+    margin-bottom: 0;
+    color: #999;
+    span {
+      float: left;
+      display: inline-block;
+      border-right: 1px solid #eee;
+      width: 30.5%;
+      padding: 10px 1px;
+      margin-right: 6px;
+      line-height: 12px;
+      text-align: left;
+      white-space: nowrap;
+    }
+  }
+}

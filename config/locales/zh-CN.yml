@@ -1,0 +1,140 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-CN:
+  app_title: 线上书城
+  app_subtitle: 一站式二维码积分商城平台
+
+  not_allow_edit: 不可编辑
+  can_not_generate_units: 不可生成二维码
+
+  create_success: 创建成功
+  create_failed: 创建失败
+  create_failure: 创建失败
+  update_success: 更新成功
+  update_failed: 更新失败
+  update_failure: 更新失败
+  destroy_success: 删除成功
+  destroy_failed: 删除失败
+  destroy_failure: 删除失败
+  sync_success: 同步成功
+  sync_failed: 同步失败，请稍后重试
+  dup_success: 复制活动成功
+  dup_failed: 复制活动失败
+
+  not_find_account_by_phone: 该手机号绑定的帐号不存在，请输入正确的手机号！
+  password_reset_success: 重置密码成功，请登录
+
+
+  weibo: 微博
+  qq_connect: QQ
+  male: 男
+  female: 女
+  unknown: 未知
+
+  points: 积分
+
+  state_change:
+    note: "状态由 %{from} 转为 %{to}"
+
+  allocate_stock_by_order: 订单分配库存
+  refund_stock_by_order: 订单退还库存
+
+  filter: 筛选
+  search: 搜索
+  filter_clean: 清空
+  filters:
+    category:
+      default: 全部分类
+      charge: 充值类
+      cash_coupon: 代金券
+      food_coupon: 美食券
+      other_coupon: 生活服务类
+      physical_coupon: 实物类
+    order:
+      default: 默认排序
+      points_asc: 分值由低到高
+      points_desc: 分值由高到低
+    points:
+      default: 全部分值
+      user_points:  "我能换的"
+      lt_1000: 小于1000
+      gteq_1000_lt_5000:  "1000 ~ 5000"
+      gteq_5000_lt_10000:  "5000 ~ 10000"
+      gteq_10000: 大于10000
+      lt: "小于%{points}"
+
+  # log 日志类
+  coupon_destroy: 删除电子券
+  coupon_create: 增加电子券
+  coupon_import: 批量导入电子券
+
+  # wizard actions
+  submit_and_next_step: 保存，并下一步
+  skip_and_next_step: 跳过，下一步
+  next_step: 下一步
+  previous_step: 上一步
+
+  store_expired: 您的账户已过期，请先充值续费
+
+  # 表单相关
+  submitting: 提交中...
+  purchase_confirm: 购买后费用将从您的账户余额中扣除，确认支付？
+  export_excel: 导出 Excel
+
+  # 微信相关
+  card_synchronizing: 同步中...
+
+
+  # 共享的model属性
+  attributes:
+    url: 地址
+    preview_url: 预览地址
+    preview_qr: 预览二维码
+
+  # 邮件相关
+  mail:
+    welcome_subject: 欢迎使用线上书城
+    do_not_reply: 此电子邮件为系统自动发送，请勿回复
+
+  # 日期相关
+  time:
+    formats:
+      date: '%Y年%b%d日'
+
+  datetime:
+    distance_in_words:
+      x_weeks:
+        one: 一周
+        other: "%{count} 周"
+  errors:
+    models:
+      product:
+        attributes:
+          price:
+            greater_than_or_equal_to: 大于等于%{count}
+    messages:
+      taken: 已经被使用
+
+

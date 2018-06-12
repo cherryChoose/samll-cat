@@ -1,0 +1,15 @@
+zh-CN:
+  activerecord:
+    models:
+      user: 用户中心
+    attributes:
+      user:
+        name: 姓名
+        email: 邮箱
+        phone: 手机号
+        password: 密码
+        password_confirmation: 重新输入
+        qq: QQ
+        github: github
+        twitter: twitter
+

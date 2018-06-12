@@ -1,0 +1,9 @@
+.panel.panel-default
+  .panel-heading
+    .panel-title 你的详细信息
+  .panel-body
+    = simple_form_for @order do |f|
+      =f.input :name
+      = f.input :address
+      = f.input :email
+      = f.submit "button"

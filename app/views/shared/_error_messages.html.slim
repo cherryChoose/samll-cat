@@ -1,0 +1,12 @@
+.row
+  .col-sm-12
+    - if target.errors.any?
+      #error_explanation.alert.alert-warning
+        h4
+          | 保存时出错：
+          = pluralize(target.errors.count, "error")
+        ul
+          - target.errors.full_messages.each do |message|
+            li
+              = message
+  .row

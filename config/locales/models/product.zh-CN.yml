@@ -1,0 +1,18 @@
+zh-CN:
+  activerecord:
+    models:
+      product: 商品
+    attributes:
+      product:
+        id: 商品编号
+        title: 商品名称
+        description: 描述
+        price: 价格
+    errors:
+      models:
+        product:
+          attributes:
+            title:
+              taken: 该商品名称已存在
+            price:
+              taken: 价格需要大于0.01元

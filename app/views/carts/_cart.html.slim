@@ -1,0 +1,7 @@
+table.table.table-condensed
+  = render @cart.line_items
+  tr
+    td.text-right{colspan="2" } 合计:
+    td{colspan="2" }= number_to_currency(@cart.total_price)
+
+= button_to '清空购物车',@cart,method: :delete,data:{ confirm: '确定清空您的购物车吗?'},class: 'btn btn-default'

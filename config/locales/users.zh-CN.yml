@@ -1,0 +1,23 @@
+"zh-CN":
+  users:
+    signature: "签名"
+    personal_website: "博客"
+    unbind_success: "%{provider} 帐号解绑成功。"
+    please_be_careful: "谨慎修改"
+    personal_information: "个人资料设置"
+    edit_password: "修改密码"
+    delete_this_account: "删除此帐号"
+    dont_like_it: "不喜欢?"
+    bind_another_account: "绑定其他帐号用于登录"
+    register_user: "注册新用户"
+    logins: "登陆"
+    already_have_account: "已经有帐号了？"
+    forget_password: "忘记了密码?"
+    not_recieve_confirm_mail: "未收到确认邮件?"
+    not_recieve_unlock_mail: "未收到解锁邮件?"
+    suggest_phone: '谨慎填写手机号'
+    submit_new_user: "提交注册信息"
+    remember_me: '记住我?'
+    not_receive_confirm_mail: "未收到确认邮件?"
+    not_receive_unlock_mail: "未收到解锁邮件?"
+    other_information_for_login_view: "是否再找这些操作?"
